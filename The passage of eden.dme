@@ -14,12 +14,17 @@
 
 // BEGIN_INCLUDE
 #include "code\world.dm"
-#include "code\_helper\helper.dm"
+#include "code\admin\amenu.dm"
+#include "code\admin\spawn.dm"
 #include "code\core\chat.dm"
 #include "code\core\emote.dm"
-#include "code\core\mob.dm"
-#include "code\core\obj.dm"
+#include "code\core\signal.dm"
 #include "code\core\verb.dm"
+#include "code\core\mob\mob.dm"
+#include "code\core\mob\dead\dead.dm"
+#include "code\core\mob\living\living.dm"
+#include "code\core\mob\simple\simple.dm"
+#include "code\menu\menu.dm"
 #include "code\modules\components\crafting\crafting.dm"
 #include "code\modules\components\physics\physics.dm"
 #include "code\modules\components\physics\physics_bridge.dm"
@@ -32,6 +37,10 @@
 #include "code\modules\items\item.dm"
 #include "code\modules\items\materials.dm"
 #include "code\modules\items\weapons.dm"
+#include "code\obj\obj.dm"
+#include "code\obj\area\area.dm"
+#include "code\obj\item\item.dm"
+#include "code\obj\turf\turf.dm"
 #include "interface\skin.dmf"
 // END_INCLUDE
 

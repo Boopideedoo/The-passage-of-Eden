@@ -61,6 +61,15 @@ window "default"
 		outer-pos = 291,0
 		inner-pos = 8,51
 		screen-size = 1280x984
+	elem "output1"
+		type = OUTPUT
+		pos = 424,144
+		size = 216x296
+		anchor1 = 66,30
+		anchor2 = 100,92
+		is-default = true
+		saved-params = "max-lines"
+		enable-http-images = true
 	elem "tab1"
 		type = TAB
 		pos = 424,0
@@ -68,6 +77,7 @@ window "default"
 		anchor1 = 66,0
 		anchor2 = 99,8
 		background-color = none
+		is-default = true
 		border = line
 		saved-params = ""
 		tabs = "ghost, Admin, server, world, debug"
@@ -78,14 +88,16 @@ window "default"
 		size = 640x44
 		anchor1 = 0,92
 		anchor2 = 100,100
+		is-default = true
 		border = line
 		saved-params = ""
 	elem "info1"
 		type = INFO
 		pos = 424,40
-		size = 216x400
+		size = 216x104
 		anchor1 = 66,8
-		anchor2 = 100,92
+		anchor2 = 100,30
+		is-default = true
 		border = line
 		saved-params = ""
 		tab-background-color = none
@@ -95,6 +107,7 @@ window "default"
 		size = 424x448
 		anchor1 = 0,0
 		anchor2 = 66,92
+		is-default = true
 		border = line
 		saved-params = "zoom;letterbox;zoom-mode"
 
