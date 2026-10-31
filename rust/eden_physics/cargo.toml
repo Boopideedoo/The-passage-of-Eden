@@ -1,0 +1,12 @@
+[package]
+name = "eden_physics"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "eden_physics"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
