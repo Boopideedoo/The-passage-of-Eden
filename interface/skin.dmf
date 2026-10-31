@@ -1,0 +1,100 @@
+macro "macro"
+	elem 
+		name = "North+REP"
+		command = ".north"
+	elem 
+		name = "South+REP"
+		command = ".south"
+	elem 
+		name = "East+REP"
+		command = ".east"
+	elem 
+		name = "West+REP"
+		command = ".west"
+	elem 
+		name = "Northeast+REP"
+		command = ".northeast"
+	elem 
+		name = "Northwest+REP"
+		command = ".northwest"
+	elem 
+		name = "Southeast+REP"
+		command = ".southeast"
+	elem 
+		name = "Southwest+REP"
+		command = ".southwest"
+	elem 
+		name = "Center+REP"
+		command = ".center"
+
+
+menu "menu"
+	elem 
+		name = "&File"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Quit"
+		command = ".quit"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Reconnect"
+		command = ".reconnect"
+		category = "&File"
+		saved-params = "is-checked"
+
+
+window "default"
+	elem "default"
+		type = MAIN
+		pos = 291,0
+		size = 640x480
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		is-default = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+		macro = "macro"
+		menu = "menu"
+		outer-size = 656x558
+		outer-pos = 291,0
+		inner-pos = 8,51
+		screen-size = 1280x984
+	elem "tab1"
+		type = TAB
+		pos = 424,0
+		size = 208x40
+		anchor1 = 66,0
+		anchor2 = 99,8
+		background-color = none
+		border = line
+		saved-params = ""
+		tabs = "ghost, Admin, server, world, debug"
+		current-tab = "stats, ic, ooc, admin, mentor"
+	elem "input1"
+		type = INPUT
+		pos = 0,440
+		size = 640x44
+		anchor1 = 0,92
+		anchor2 = 100,100
+		border = line
+		saved-params = ""
+	elem "info1"
+		type = INFO
+		pos = 424,40
+		size = 216x400
+		anchor1 = 66,8
+		anchor2 = 100,92
+		border = line
+		saved-params = ""
+		tab-background-color = none
+	elem "map1"
+		type = MAP
+		pos = 0,-8
+		size = 424x448
+		anchor1 = 0,0
+		anchor2 = 66,92
+		border = line
+		saved-params = "zoom;letterbox;zoom-mode"
+
